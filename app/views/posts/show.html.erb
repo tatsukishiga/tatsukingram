@@ -23,7 +23,7 @@
                 </div>
               <% end %>
             <% end %>
-
+            
           </div>
           <div class="m-2">
             <strong>
@@ -50,6 +50,9 @@
             <% end %>
           </div>
 
+        </div>
+        <div id="like-text-post-<%= @post.id.to_s %>">
+          <%= render "like_text", { likes: @post.likes } %>
         </div>
 
         <div id="like-text-post-<%= @post.id.to_s %>">
